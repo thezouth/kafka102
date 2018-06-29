@@ -1,10 +1,5 @@
-# Start Kafka broker: 
-kafka-server-start.sh server.properties
-
-
 # Create topic: 
 kafka-topics.sh --zookeeper localhost:2181 --create --topic test --partitions 1 --replication-factor 1
-
 
 # Check topic: 
 kafka-topics.sh --zookeeper localhost:2181 --list
@@ -22,4 +17,3 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-
 # Consumer Group:
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group mygroup
-
