@@ -12,7 +12,7 @@ cp conf/zoo_sample.cfg conf/zoo.cfg
 ./bin/zkServer.sh start conf/zoo.cfg
 
 # Check zookeeper alive
-echo ruok | nc localhost:2181
+echo ruok | nc localhost 2181
 
 # Stop zookeeper
 ./bin/zkServer.sh stop conf/zoo.cfg
