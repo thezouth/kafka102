@@ -7,4 +7,4 @@ tar -xvf kafka_2.11-1.1.0.tgz
 cd kafka_2.11-1.1.0
 
 # Start Kafka
-./bin/kafka-server-start.sh conf/server.properties
+./bin/kafka-server-start.sh config/server.properties
